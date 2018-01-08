@@ -1,0 +1,482 @@
+body {
+    margin: 0;
+}
+
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#baggrund {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/baggrund.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+
+}
+
+#skyer {
+    background-image: url(img/skyer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 70vw;
+    height: 20vw;
+    top: 1%;
+    left: 25%;
+    animation-name: skyer_kf;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skyer_kf {
+
+
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+
+}
+
+#skyer1 {
+    background-image: url(img/skyer1-01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 70vw;
+    height: 20vw;
+    top: 5%;
+    left: 25%;
+    animation-name: skyer_kf;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skyer_kf {
+
+
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+
+}
+
+#slot {
+    background-image: url(img/slottet.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 56.35vw;
+    height: 100vw;
+    top: 0%;
+    left: 22%;
+}
+
+#graes {
+    background-image: url(img/grass.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 22.2vw;
+    top: 79%;
+    left: 0%;
+    transform: skewX(0deg);
+    animation: grass_kf 8s infinite;
+    animation-name: grass_kf;
+    animation-duration: 2s;
+    animation-timing-function: initial;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+@keyframes grass_kf {
+
+    0% {
+        transform: skewX(10deg);
+    }
+
+    50% {
+        transform: skewX(15deg);
+    }
+
+    100% {
+        transform: skewX(10deg);
+    }
+}
+
+#maden {
+    background-image: url(img/maden.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* 541 (image) /1600 (baggrundens bredte)= * 100 */
+    width: 21vw;
+    /* 861 (image) /900 (baggrundens bredte)= * 100 */
+    height: 55vw;
+    position: absolute;
+    top: 40%;
+    right: 1%;
+}
+
+/*
+#prinsesse {
+    background-image: url(img/prinsessen.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 541 (image) /1600 (baggrundens bredte)= * 100
+    width: 22.5vw;
+  861 (image) /900 (baggrundens bredte)= * 100
+    height: 63vw;
+    position: absolute;
+    top: 31%;
+    right: 15%;
+}*/
+
+#bonde {
+    background-image: url(img/bondedreng.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* 315 (image) /1600 (baggrundens bredte)= * 100 */
+    width: 13.5vw;
+    /* 735 (image) /900 (baggrundens bredte)= * 100 */
+    height: 54.5vw;
+    position: absolute;
+    top: 37%;
+    left: 20%;
+}
+
+#flag {
+    width: 6.25%;
+    height: 11.11%;
+    background-image: url(img/flag.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    transform: skewX(0deg);
+    animation: flag_kf 8s infinite;
+    animation-name: flag_kf;
+    animation-duration: 2s;
+    animation-timing-function: initial;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+@keyframes flag_kf {
+
+    0% {
+        transform: skewX(10deg);
+    }
+
+    50% {
+        transform: skewX(1deg);
+    }
+
+    100% {
+        transform: skewX(10deg);
+    }
+}
+
+
+#flag1 {
+    width: 6.25%;
+    height: 11.11%;
+    background-image: url(img/flag.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 1%;
+    left: 45.1%;
+    transform: skewX(0deg);
+    animation: flag1_kf 8s infinite;
+    animation-name: flag1_kf;
+    animation-duration: 2s;
+    animation-timing-function: initial;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+@keyframes flag1_kf {
+
+    0% {
+        transform: skewX(10deg);
+    }
+
+    50% {
+        transform: skewX(1deg);
+    }
+
+    100% {
+        transform: skewX(10deg);
+    }
+}
+
+
+#flag2 {
+    width: 6.25%;
+    height: 11.11%;
+    background-image: url(img/flag.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 7%;
+    left: 51.7%;
+    transform: skewX(0deg);
+    animation: flag2_kf 8s infinite;
+    animation-name: flag2_kf;
+    animation-duration: 2s;
+    animation-timing-function: initial;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+@keyframes flag2_kf {
+
+    0% {
+        transform: skewX(10deg);
+    }
+
+    50% {
+        transform: skewX(1deg);
+    }
+
+    100% {
+        transform: skewX(10deg);
+    }
+}
+
+/* prinsessen start */
+
+#princess_sprite {
+    background-image: url(img/asset.svg);
+    width: 12.5vw;
+    height: 24vw;
+    background-size: 300%;
+    /* - mod venstre. */
+}
+
+.princess_walkcycle {
+    animation-name: princess_walkcycle_kf;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    animation-timing-function: steps(3);
+
+}
+
+@keyframes princess_walkcycle_kf {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: -300%;
+    }
+}
+
+#princess_container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+.princessStartPos {
+    background-position: 0% 0%;
+}
+
+.princess_move_left {
+    animation-name: princess_move_left_kf;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /*animation-timing-function: ease;*/
+}
+
+@keyframes princess_move_left_kf {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 71.31%;
+    }
+}
+
+
+.princess_move_to_mid {
+    animation-name: princess_move_to_mid;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /*animation-timing-function: ease;*/
+}
+
+@keyframes princess_move_to_mid {
+    0% {
+        left: 71.31%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+
+.princess_staa {
+    background-position: 0 0;
+}
+
+.prinsesse_med_mad {
+    background-position: 400% -780%;
+
+}
+
+/* bonde start */
+
+#bonde_sprite {
+    background-image: url(img/spritesheet_bonde.svg);
+    width: 12.5vw;
+    height: 24vw;
+    background-size: 301%;
+    /* - mod venstre. */
+}
+
+.bonde_walkcycle {
+    animation-name: bonde_walkcycle_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: steps(3);
+}
+
+@keyframes bonde_walkcycle_kf {
+    0% {
+        background-position: 300%;
+    }
+
+    100% {
+        background-position: -300%;
+    }
+}
+
+.bondeStartPos {
+    background-position: 0% 0%;
+}
+
+
+.bonde_staa {
+    background-position: -200% 0;
+
+}
+
+#bonde_container {
+    position: absolute;
+    top: 48%;
+    left: -20%;
+}
+
+.bondeStartPos {
+    background-position: 0% 0%;
+}
+
+.bonde_move_right {
+    animation-name: bonde_move_right_kf;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bonde_move_right_kf {
+    0% {
+        left: -20%;
+    }
+
+    100% {
+        left: 20%;
+    }
+}
+
+.bonde_move_to_mid {
+    animation-name: bonde_move_to_mid;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /*animation-timing-function: ease;*/
+}
+
+@keyframes bonde_move_to_mid {
+    0% {
+        left: 20%;
+    }
+    100% {
+        left: 38%;
+    }
+}
+
+.bonde_med_mad {
+    background-position: 400% -780%;
+
+}
+
+/* spørgsmål*/
+
+#skal_prinsessen_dele {
+    width: 30vw;
+    height: 27vw;
+    background-size: cover;
+    background-image: url(img/deleknap-01.png);
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+
+#skal_prinsessen_dele_ja {
+    width: 15vw;
+    height: 13.5vw;
+    background-size: cover;
+    background-image: url(img/button2.png);
+    position: absolute;
+    top: 56%;
+    left: 74%;
+}
+
+#skal_prinsessen_dele_nej {
+    width: 15vw;
+    height: 13.5vw;
+    background-size: cover;
+    background-image: url(img/button3-01.png);
+    position: absolute;
+
+    top: 74%;
+    left: 13%;
+}
+
+/* lyd */
+
+.minLyd
