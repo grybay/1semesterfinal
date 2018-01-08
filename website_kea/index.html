@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEA Rent - UX doku site</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700,800" rel="stylesheet">
+</head>
+<!-- Sitets index:
+1. Brugerundersøgelse
+2. Experience Map og persona
+3. Ide-uvikling
+4. Design Charette
+5. Lofi prototype
+6. Test af design
+7. Valg af endelig ide
+8. Analyse af testresultater
+9. Iteration på den endelige idé
+10. HiFi Prototyping af idé
+11. Endelig produkt samt process
+12. scrumvideo
+-->
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>KEA Rent - Dokumentations site</h1>
+            <nav>
+                <a href="#" class="">home</a>
+                <a href="https://trello.com/b/KwR9LAjI/gruppe-8-grundl%C3%A6ggende-ux" target="_blank" class="">trello</a>
+                <a href="https://docs.google.com/document/d/1W56mtdEx5gOcPKvNnsBPNKED5HsChP95hA4tqLEHKYY/edit" target="_blank" class="">gruppe-kontrakt</a>
+                <a href="#brugerundersøgelse" class="">brugerundersøgelse</a>
+                <a href="#experiencemap" class="">Experience map</a>
+                <a href="#scrum" class="">daily-scrum</a>
+            </nav>
+        </header>
+
+        <div class="panel">
+            <section id="om">
+                <div class="sectionwrapper">
+                    <h2>Om</h2>
+                    <p>I dette projekt skal vi lærer om hvordan man idé genere en idé til en app, og dernæst lave en prototype i Adobe XD. App´en skal være rettet mod et behov som KEA afdelingen har og målgrubben er de studerende på KEA</p>
+                </div>
+            </section>
+        </div>
+        <div class="panel">
+            <a href="#"><img src="img/kea_EN_logo_BLK.jpg"></a>
+        </div>
+        <div class="panel">
+            <section id="brugerundersøgelse">
+                <div class="sectionwrapper">
+                    <h2>Brugerundersøgelse</h2>
+                    <p>For at danne os et billed af hvilke kritere som vores målgruppe havde, og hvad de havde af meninger omkring KEA, brugte vi informationer fra et "google forms" survey som hele klassen besvarede. Den formation som syrvey´en gav os brugte vi til at lave vores persona og vores experience map</p>
+                </div>
+            </section>
+        </div>
+        <div class="panel">
+            <a href="#"><img src="img/Google-Forms-for-Workflow-Management-1.jpg"></a>
+
+        </div>
+        <div class="panel">
+            <section id="experiencemap">
+                <div class="sectionwrapper">
+                    <h2>Experience map</h2>
+                    <p>Vi har nogle mangler på vores experience map men vi er opmærksomme på det.</p>
+                </div>
+            </section>
+        </div>
+        <div class="panel">
+            <a href="#"><img src="img/question-mark-2123969_1280.jpg"></a>
+
+        </div>
+
+        <div class="panel">
+            <a href="#"><img src="img/stine_potr%C3%A6t.jpg"></a>
+        </div>
+        <div class="panel">
+            <section id="experiencemap">
+                <div class="sectionwrapper">
+                    <h2>Persona</h2>
+                    <p>Stine Larsen er en dansk kvinde på 23 år der bor i en lejelejlighed i København sammen med hendes kæreste. Stine har tidligere afslutettet studentereksamen og studerer nu til multimediedesigner på Kea. Ved siden af studiet arbejder Stine som kasseassistent i Føtex. Stine har en iPhone som hun jævnligt bruger til at følge med på sociale medier som f.eks. facebook, snapchat og instagram. Stine har også en mac computer som hun bruger i sin dagligdag på studiet. </p>
+                </div>
+            </section>
+        </div>
+        <div class="panel">
+            <section id="Ide-uvikling">
+                <div class="sectionwrapper">
+                    <h2>Ide-uvikling</h2>
+                    <div>
+                        <h3>Idé 1: Klasse-info (iKEA)</h3>
+                        <p><b>Aktiviteter</b></p>
+                        Gældende for alle aktiviteter
+                        <ul>
+                            <b>Features</b>
+                            <li>Screen orientation & lock</li>
+                            <li>Device orientation (Opsætningen ændre sig en smule når man vender skærmen)</li>
+                            <li>Touch Gestures (Brug af touch, da det foregår på mobilen)</li>
+                            <li>Offline-mode (man kan dog ikke blive opdateret uden at være online)</li>
+                        </ul>
+                        Find egen klasse
+                        <ul>
+                            <b>Features</b>
+                            <li> udvælg egen klasse fra en række forslag.
+                            </li>
+                            <li>husk mig (kan huske hvilken klasse der er valgt, dermed kan der komme notifikationer)</li>
+                        </ul>
+                        Se skema
+                        <ul>
+                            <b>Features</b>
+                            <li> mulighed for links til web, hvortil der vil blive en webbrowser vil blive åbnet
+                            </li>
+                            <li>scroll gennem dagen</li>
+                            <li>klik mellem dagene</li>
+                            <li>mulighed for links til web, hvortil der vil blive en webbrowser vil blive åbnet</li>
+                        </ul>
+                        Kort over klasselokaler
+                        <ul>
+                            <b>Features</b>
+                            <li>indtast navn på klasselokale (søgefelt)</li>
+                        </ul>
+                        Få beskeder fra lærerne
+                        <ul>
+                            <b>Features</b>
+                            <li>Vibration</li>
+                            <li>Push messages</li>
+                            <li>mulighed for links til web, hvortil der vil blive en webbrowser vil blive åbnet</li>
+                        </ul>
+                        Blå bog - find klassekammerat
+                        <ul>
+                            <b>Features</b>
+                            <li>Vibration</li>
+                            <li>Scroll gennem profiler (alfabetisk orden)</li>
+                            <li>Tryk på en profil</li>
+                        </ul>
+                        Blå bog - valgt profil (visning af præsentation)
+                        <ul>
+                            <b>Features</b>
+                            <li>mulighed for links til web, hvortil der vil blive en webbrowser vil blive åbnet</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Idé 2: Kea-profil (KeaF)</h3>
+                        <p><b>Aktiviteter</b></p>
+                        Brugeren logger ind
+                        <ul>
+                            <b>Features</b>
+                            <li>Brugeren indtaster sit brugernavn</li>
+                            <li>Brugeren indtaster sin adgangskode</li>
+                            <li>Brugeren logger på</li>
+                            <li>Glemt adgangskode</li>
+                            <li>Opret bruger</li>
+                        </ul>
+                        Rediger profil
+                        <ul>
+                            <b>Features</b>
+                            <li> Brugeren kan rette på følgende:</li>
+                            <ul>
+                                <li>Navn</li>
+                                <li>E-mail</li>
+                                <li>Kompetencer</li>
+                                <li>Beskrivelse</li>
+                                <li>Portfolio</li>
+                                <li>Billeder</li>
+                            </ul>
+                        </ul>
+                        “Væggen” - Jobopslag
+                        <ul>
+                            <b>Features</b>
+                            <li>Sorterings filter, marker og vælg kriterier</li>
+                            <li>Opslagstavle (Jobs, grupper osv)</li>
+                            <li>Kommentare</li>
+                            <li>Marker som læst/ulæst</li>
+                        </ul>
+                        “Væggen” - Ansøgningsopslag
+                        <ul>
+                            <b>Features</b>
+                            <li>Sorteringsfiter, marker og vælg kriterier</li>
+                            <li>Lav opslag, beskrivelse og link til profil</li>
+                        </ul>
+                        Skriv til opslag
+                        <ul>
+                            <b>Send besked</b>
+                            <li>Vibration</li>
+                            <li>Kopier e-mail</li>
+                        </ul>
+                        Find venner
+                        <ul>
+                            <b>Features</b>
+                            <li>Indtast navne</li>
+                            <li>Indtast e-mail</li>
+                            <li>Indtast kompetencer</li>
+                            <li>Søg på kriterier</li>
+                        </ul>
+                        Notifikationer
+                        <ul>
+                            <b>Features</b>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Idé 3: Kea-tech-udlejning (KEArent)</h3>
+                        <p><b>Aktiviteter</b></p>
+                        Gældende for alle aktiviteter
+                        <ul>
+                            <b>Features</b>
+                            <li>Screen orientation & lock </li>
+                            <li>Device orientation (Opsætningen ændre sig en smule når man vender skærmen)</li>
+                            <li>Touch Gestures (Brug af touch, da det foregår på mobilen)</li>
+                        </ul>
+                        Login
+                        <ul>
+                            <b>Features</b>
+                            <li>indtast brugernavn (kea-login)</li>
+                            <li>indtast kode (kea-login)</li>
+                        </ul>
+                        Find produktet (produkt-site)
+                        <ul>
+                            <b>Features</b>
+                        </ul>
+                        Reserver produkt (under visning af produkt)
+                        <ul>
+                            <b>Features</b>
+                        </ul>
+                        Se Profil (kvittering, lån, reserveringer)
+                        <ul>
+                            <b>Send besked</b>
+                            <li>vibration (ved push beskeder)</li>
+                            <li>push-beskeder (når reserveringen er klar og når produktet skal til at afleveres)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="panel">
+            <img src="img/charette_kearent_1.JPG">
+            <img src="img/charette_kearent_2.JPG">
+            <img src="img/charette_keaf.JPG">
+            <img src="img/Google-Forms-for-Workflow-Management-1.jpg">
+            <img src="img/Google-Forms-for-Workflow-Management-1.jpg">
+            <img src="img/Google-Forms-for-Workflow-Management-1.jpg">
+
+        </div>
+        <div class="panel">
+            <section id="test">
+                <div id="#">
+                    <h2>Udlejnings appen</h2>
+                    <p>Formålet med testen er at se om vores testperson kan navigere gennem siden og hører om der er nogle mangler eller forbedringer som kunnen blive implateret.</p>
+                    <h3>Testperson:</h3>
+                    <p>Mikkel<br> 20-30 år<br> Studerende på kea</p>
+                    <p>Vi har spurgt 3 personer om de ville prøve en rå udgave af vores app og vi har filmet vores testperson gå gennem app'en og se og hører hans reaktioner og meninger. </p>
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9Xe6KlFvkUM?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Test af udlejnings appen</h3>
+                    <ul>
+                        <li>Brugeren kunne nogenlunde navigerer gennem appen</li>
+                        <li>Mangler login knap (se evt. tid 0.12)</li>
+                        <li>E-mail kvittering til brugeren</li>
+                        <li>Varestatus på kalenderen</li>
+                    </ul>
+
+                    <h3>Temaer</h3>
+                    <h4>Navigation:</h4>
+                    <p>Ud fra testen virkede det som om testpersonen nemt kunne navigere rundt i appen. Drop Down menuen blev udnyttet som den skulle og brugeren kom igennem hele testen uden at fare vild.</p>
+                    <h4>Login:</h4>
+                    <p>Testpersonen mindede os om at der ikke var noget login. Man kan ikke komme videre uden.</p>
+                    <h4>Vare-info:</h4>
+                    <p>Det ville være smart hvis man også kunne få kvitteringen på mail, til dem der har brug for det. I stedet for at varestatus skal i søgefeltet, kan det spare tid ved at det står på kalenderen.
+                    </p>
+                    <h4>Videre arbejde:</h4>
+                    <p>Vi skal implementer en email notifikation og ændre lidt i vores reservering process. Ellers skal vi rette nogle små mangler såsom “login knap” og bedre navigation.</p>
+                </div>
+            </section>
+        </div>
+        <div class="panel">
+            <h2>iKEA</h2>
+            <p> Formålet med testen er at se om vores testperson kan navigere gennem siden og hører om der er nogle mangler eller forbedringer som kunnen blive implateret.
+            </p>
+            <h3>Testperson:</h3>
+            <p>Emilie<br> 20-30 år<br> Studerende på kea</p>
+            <h3>Test af iKEA</h3>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1Ezs0xHHYPg?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <ul>
+                <li>0.20 Mangler login</li>
+                <li>0.36 Testpersonen i tvivl om hvor hun er</li>
+                <li>0.45 Tryk eller swipe</li>
+            </ul>
+            <h3>Temaer</h3>
+            <h4>Knapper:</h4>
+            <p>Mangler en knap til at komme videre med</p>
+            <h4>Navigering:</h4>
+            <p>Testpersonen var på et tidspunkt i tvivl om hvor hun var. (der kan evt. bruges farver til at indikerer hvilken side man er på).</p>
+        </div>
+        <!--test af ide nr 2-->
+        <div class="panel">
+            <h2>keaF</h2>
+            <p> Formålet med testen er at se om vores testperson kan navigere gennem siden og hører om der er nogle mangler eller forbedringer som kunnen blive implateret.
+            </p>
+            <h3>Testperson:</h3>
+            <p>Mathilde<br> 20-30 år<br> Studerende på kea</p>
+            <h3>Test af keaF</h3>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kj8W9hKKhIQ?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <ul>
+                <li>Mangler besked</li>
+                <li>2.27: Tvivl</li>
+            </ul>
+        </div>
+        <div class="panel">
+            <a href="#"><img src="http://via.placeholder.com/790x350"></a>
+            <div>
+            </div>
+        </div>
+
+        <section id="scrum" class="video-scrum">
+            <div class="media">
+                <div class="img">
+                    <iframe src="https://www.youtube.com/embed/QEkPJAUTfI0?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h2 class="title">Scrum 1</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula vitae ligula sit amet maximus. </p>
+                </div>
+                <div class="footer">
+                    <a href="https://drive.google.com/file/d/1Am1fA1V6xG7WPOaZolG2HV9_crqF4uKX/view?usp=sharing" target="_blank">Link til videomappe</a>
+                </div>
+            </div>
+            <!--video on right side-->
+            <div class="media media-flip">
+                <div class="img">
+                    <iframe src="https://www.youtube.com/embed/eW2Jxv-kFU8" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h2 class="title">Scrum 2</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="footer">
+                    <a href="https://drive.google.com/file/d/13m5wWIp_g9jAOdmJgZj6VRUhZ2wDyf66/view?usp=sharing" target="_blank">Link til videomappe</a>
+                </div>
+            </div>
+            <div class="media">
+                <div class="img">
+                    <iframe src="https://www.youtube.com/embed/AJWa1b4XTrk" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h2 class="title">Scrum 3</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula vitae ligula sit amet maximus. </p>
+                </div>
+                <div class="footer">
+                    <a href="https://drive.google.com/file/d/1Am1fA1V6xG7WPOaZolG2HV9_crqF4uKX/view?usp=sharing" target="_blank">Link til videomappe</a>
+                </div>
+            </div>
+            <div class="media media-flip">
+                <div class="img">
+                    <iframe src="https://www.youtube.com/embed/tNeFB2u79cQ" frameborder="0" gesture="media" allowfullscreen></iframe>
+                </div>
+                <h2 class="title">Scrum 4</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula vitae ligula sit amet maximus. Nunc auctor neque</p>
+                </div>
+                <div class="footer">
+                    <a href="https://drive.google.com/file/d/13m5wWIp_g9jAOdmJgZj6VRUhZ2wDyf66/view?usp=sharing" target="_blank">Link til videomappe</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">footer</footer>
+    </div>
+
+    <script src=""></script>
+</body>
+
+</html>

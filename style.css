@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+}
+
+#forside,
+#om,
+#tema1,
+#tema2,
+#tema3,
+#tema4 {
+    max-width: 5200px;
+    margin: auto;
+}
+
+body {
+    background-image: url(img/splash.jpeg);
+    font-family: 'barlow';
+    margin: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img {
+    width: 70%;
+}
+
+
+/* overskrifter */
+
+h1 {
+    font-family: 'barlow';
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'barlow';
+    color: black;
+}
+
+h3 {
+    font-family: 'barlow';
+    color: black;
+}
+
+/* overskrifter slut */
+
+/* menu */
+
+header {
+    position: fixed;
+    /* ligger fast på skærmen*/
+    width: 100vw;
+    padding: 1em;
+    background-color: white;
+}
+
+header nav {
+    font-family: "barlow";
+    text-align: center;
+    margin: 0 1vw 0 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding-left: 4px;
+    display: block;
+}
+
+header nav a:hover {
+    color: darksalmon;
+}
+
+header h1 {
+    text-align: center;
+    margin: 41px;
+}
+
+@media screen and (min-width: 676px) {
+    header nav a {
+        display: inline-block;
+    }
+}
+
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 13vw 5vw 13vw;
+}
+
+/* menu slut */
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-family: "barlow";
+}
+
+footer a:link,
+a:visited {
+    color: #555;
+    text-decoration: none;
+}
+
+footer a:hover,
+a:visited:hover {
+    color: darksalmon;
+    text-decoration: none;
+}
+
+/* footer slut*/
+
+#forside h2 {
+    font-size: 5em;
+    text-align: center;
+}
+
+#forside .column {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 300px 10px 0 10px;
+    background-color: white;
+    padding: 5vw 0 5vw 0;
+}
+
+
+
+/* media screen settings */
+
+@media screen and (min-width: 370px) and (max-width: 627px) {
+    header h1 {
+        display: none;
+    }
+}
+
+header nav a {
+    display: inline-block;
+}
+
+#forside .column {
+    width: 60vw;
+    margin: 149px 10px 0 10px;
+
+}
+
+#om .column {
+    width: 60vw;
+    margin: 140px 10px 0 10px;
+
+}
+
+#forside h2 {
+    font-size: 3em;
+}
+
+#forside footer {
+    position: absolute;
+    left: 5%;
+    bottom 5%;
+}
+
+#tema1 .column {
+    width: 30vw;
+    margin: 140px 10px 0px 10px;
+
+}
+
+#virksomhedsvideo
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) and (orientation: landscape) {
+
+    height: 75vw;
+}
+
+
+
+
+@media screen and (min-width: 1025px) and (orientation: landscape) {
+
+
+    height: 56vw;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1025px),
+screen and (min-resolution: 192dpi) and (min-width: 1025px) {
+
+    height: 56vw;
+}
+
+
+
+/* forside */
+
+#forside .column {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 260px 10px 0 10px;
+    background-color: white;
+    background-color: white;
+    border: 3px solid #fdf4f7;
+}
+
+/* forside */
+
+/* om */
+
+#om .column {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 260px 10px 0 10px;
+    background-color: white;
+    background-color: #fdf4f7;
+    border: 3px solid white;
+    text-align: center;
+}
+
+#om .column_second {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 260px 10px 0 10px;
+    background-color: #f4f4f4;
+    padding: 5vw 0 5vw 0;
+}
+
+#om .column_content {
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+#om img {
+    width: 70%;
+}
+
+/* om slut */
+
+/* stilartsite */
+
+#tema1 .column {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 260px 10px 0 10px;
+    background-color: white;
+    background-color: white;
+    justify-content: center;
+    padding: 2vw 0 5vw 0;
+    text-align: center;
+
+
+}
+
+#tema1 .columnsecond {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 50px 10px 0 10px;
+    background-color: white;
+    background-color: white;
+    justify-content: center;
+}
+
+
+.tema1 {
+    display: block;
+    margin: 0 auto;
+}
+
+#tema1 a:link {
+    text-decoration: underline;
+    text-align: center;
+    font-family: "barlow";
+}
+
+#tema1 a:link,
+a:visited {
+    color: #555;
+    text-decoration: underline;
+}
+
+#tema1 a:hover,
+a:visited:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+/* stilartsite slut */
+
+/* cphdox */
+
+#tema3 .column {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 260px 10px 0 10px;
+    background-color: white;
+    background-color: white;
+    padding: 2vw 0 5vw 0;
+    text-align: center;
+
+}
+
+#tema3 img {
+    width: 100%;
+}
+
+#tema3 .columnsecond,
+.columnthird {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 50px 10px 0 10px;
+    background-color: white;
+    justify-content: center;
+}
+
+#tema3 a:link {
+    text-decoration: underline;
+    text-align: center;
+    font-family: "barlow";
+}
+
+#tema3 a:link,
+a:visited {
+    color: #555;
+    text-decoration: underline;
+}
+
+#tema3 a:hover,
+a:visited:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+#tema3 .videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+#tema3 .videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* cphdox slut */
+
+/* animation */
+
+#tema2 .column {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 260px 10px 0 10px;
+    background-color: white;
+    padding: 2vw 0 5vw 0;
+    text-align: center;
+
+}
+
+#tema2 img {
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+}
+
+#tema2 a:link {
+    text-decoration: underline;
+    text-align: center;
+    font-family: "barlow";
+}
+
+#tema2 a:link,
+a:visited {
+    color: #555;
+    text-decoration: underline;
+}
+
+#tema2 a:hover,
+a:visited:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+
+/* animation slut */
+
+/* ux */
+
+#tema4 .column,
+columnsecond {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 260px 10px 0 10px;
+    background-color: white;
+    background-color: white;
+    padding: 2vw 0 5vw 0;
+    text-align: center;
+
+}
+
+#tema4 a:link {
+    text-decoration: underline;
+    text-align: center;
+    font-family: "barlow";
+}
+
+#tema4 a:link,
+a:visited {
+    color: #555;
+    text-decoration: underline;
+}
+
+#tema4 a:hover,
+a:visited:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+/* ux slut */

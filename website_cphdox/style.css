@@ -1,0 +1,56 @@
+body {
+    margin: 5vw;
+}
+
+h1 {
+    font-family: HelveticaBold, sans-serif;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: HelveticaBold, sans-serif;
+    margin-top: 2em;
+}
+
+
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+ul {
+    font-family: Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+a {
+    font-family: Helvetica, sans-serif;
+    color: black;
+}
+
+img {
+    width: 70vw;
+    margin: 0 10vw 0 10vw;
+}
+
+#interviewguide ul {
+    list-style-type:circle
+}
+
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 20px;
+}
+
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
