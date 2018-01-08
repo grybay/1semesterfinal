@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+}
+
+#om,
+#sortiment,
+#oel_smagning,
+#kontakt,
+#fad,
+#flaske {
+    max-width: 5200px;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(picture_files/background_vintage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+mark {
+    background-color: transparent;
+    color: #e8a53c;
+}
+
+a {
+    color: #e8a53c;
+}
+
+
+/** header**/
+
+header {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8)0%, rgba(0, 0, 0, 0) 100%);
+    width: 100vw;
+}
+
+header h1 {
+    background-color: transparent;
+}
+
+header nav {
+    font-family: 'helvetica neue', sans-serif;
+    font-style: normal;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    text-align: right;
+    margin: 3vw 5vw 0 0;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding-left: 4px;
+    display: block;
+    background-color: transparent;
+}
+
+header nav a:hover {
+    color: #e8a53c;
+}
+
+@media screen and (min-width: 676px) {
+    header nav a {
+        display: inline-block;
+    }
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 5vw 5vw 5vw;
+}
+
+
+/** splash **/
+
+#splash {
+    width: 100vw;
+    height: 167vw;
+    /* vi skal finde højden, så det ikke bliver skåret af: 627H/375B*100(den nye bredde)=167vw */
+    background-image: url(splash/mobile_portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ikon {
+    padding: 2vw 2vw 2vw 3vw;
+    width: 7vw;
+    box-sizing: content-box;
+}
+
+@media screen and (min-width: 376px) and (orientation: portrait) {
+    #splash {
+        background-image: url(splash/tablet-portrait.jpg);
+        height: 133vw;
+    }
+    .ikon img {
+        height: 20px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 627px) and (orientation: landscape) {
+    #splash {
+        background-image: url(splash/mobile_landscape.jpg);
+        height: 59vw;
+    }
+    .ikon img {
+        height: 9vw;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) and (orientation: landscape) {
+    #splash {
+        background-image: url(splash/tablet_lanscape.jpg);
+        height: 75vw;
+    }
+    .ikon img {
+        height: 9vw;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) and (orientation: landscape) {
+    #splash {
+        background-image: url(splash/desktop.jpg);
+        height: 56vw;
+    }
+    .ikon img {
+        height: 11vw;
+        width: auto;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1025px),
+screen and (min-resolution: 192dpi) and (min-width: 1025px) {
+    #splash {
+        background-image: url(splash/desktop_retina.jpg);
+        height: 56vw;
+    }
+    .ikon {
+        height: 17vw;
+        width: auto;
+    }
+}
+
+/** splash slut **/
+
+/** typografien **/
+
+h1 {
+    font-family: 'times new roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 7px;
+}
+
+h2 {
+    font-family: 'times new roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 7px;
+}
+
+h3 {
+    font-family: 'times new roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 7px;
+}
+
+h4 {
+    font-family: 'times new roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 7px;
+}
+
+p {
+    font-family: 'helvetica neue', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+li {
+    font-family: 'helvetica neue light', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #e8a53c;
+}
+
+
+/*ul {
+    list-style: none;
+    list-style-type: none;
+}
+*/
+
+/** typografien slut **/
+
+/** om **/
+
+#om {
+    padding: 30px;
+}
+
+#om .column_first {
+    flex-grow: 1;
+    flex-basis: 100vw;
+}
+
+#om .column_second {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#om .column_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vw 0 5vw 0;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+#om .content_om {
+    flex-grow: 0.5;
+    flex-basis: 400px;
+    align-content: space-between;
+}
+
+#om .content_smiley {}
+
+#om .videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+#om .videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/** om slut **/
+
+/** sortiment **/
+
+section#sortiment {}
+
+#sortiment .column_first {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+#sortiment .column_second {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+#sortiment .column_content {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vw 0 5vw 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#sortiment .content_flaske {
+    flex-basis: 100px;
+    /*border-style: solid;
+    border-color: white;
+    border-width: 3px;*/
+}
+
+#sortiment .content_flaske a img:hover {}
+
+#sortiment .content_fad {
+    flex-basis: 100px;
+    /*border-style: solid;
+    border-color: white;
+    border-width: 3px;*/
+}
+
+
+/** sortiment slut **/
+
+/** øl smagning **/
+
+section#oel_smagning {}
+
+#oel_smagning .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#oel_smagning .column_wide {
+    flex-basis: 100px;
+    flex-grow: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 3vw 0 3vw;
+}
+
+#oel_smagning .column_narrow {
+    flex-basis: 500px;
+    flex-grow: 1;
+    padding-left: 5vw;
+}
+
+#oel_smagning .column_narrow img {
+    width: 100%;
+}
+
+
+/** øl smagning slut **/
+
+/** kontakt **/
+
+section#kontakt {}
+
+
+/** .column_content {
+    flex-wrap: wrap;
+    display: flex;
+    height: 100%;
+    border: 10px solid black;
+}
+
+.column_wide {
+    flex-grow: 2;
+    border: 10px solid black;
+}
+
+.column_narrow {
+    flex-basis: 100px;
+    flex-grow: 1;
+    border: 10px solid black;
+} **/
+
+/* parent */
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px;
+    justify-content: space-around
+}
+
+
+/* child */
+
+#kontakt .column_narrow {
+    flex-grow: 0.5;
+    flex-basis: 250px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 2.5vw 0 2.5vw;
+}
+
+
+/* child */
+
+#kontakt .column_wide {
+    flex-grow: 0;
+    flex-basis: 400px;
+    padding-left: 5vw;
+}
+
+
+/* parent */
+
+#kontakt .column_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#kontakt .top {
+    border: 1px;
+    padding-bottom: 5%;
+}
+
+#kontakt .middle {
+    border: 1px;
+    padding-bottom: 5%;
+}
+
+#kontakt .bottom {
+    border: 1px;
+}
+
+#kontakt .column_wide img {
+    width: 50vw;
+    height: 42vw;
+}
+
+#kontakt .bottom img {
+    width: 40%;
+}
+
+
+/** kontakt slut **/

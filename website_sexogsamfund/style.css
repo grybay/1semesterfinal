@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 62.5%;
+    font-family: sans-serif;
+
+}
+
+
+/*****     Text     *****/
+
+h1 {
+    font-size: 5.0em;
+    font-weight: 900;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    /*    text-transform: capitalize;*/
+}
+
+h2 {
+    font-size: 4.2em;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 3.0em;
+    font-weight: 500;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 2.0em;
+    font-weight: 500;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+h5 {
+    font-size: 1.6em;
+    font-weight: 500;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.6em;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    color: inherit;
+}
+
+a:hover {}
+
+
+/*****     Diverse     *****/
+
+.topspace {
+    margin-top: 60px;
+}
+
+.img_w100 {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.img_w90 {
+    width: 90%;
+    margin: 20px 0px;
+}
+
+.img_w80 {
+    width: 80%;
+    margin: 20px 0px;
+}
+
+.img_w70 {
+    width: 70%;
+    margin: 20px 0px;
+}
+
+.img_w60 {
+    width: 60%;
+    margin: 20px 0px;
+}
+
+.img_w50 {
+    width: 50%;
+    margin: 20px 0px;
+}
+
+.img_w40 {
+    width: 40%;
+    margin: 20px 0px;
+}
+
+.img_karakter {
+    width: 400px;
+    margin: 20px;
+}
+
+.img_annoncer {
+    width: 400px;
+    margin: 20px;
+}
+
+.btn1 {
+    background-color: #000;
+    border-radius: 20px;
+
+    padding-top: 26px;
+    padding-right: 40px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+
+    margin-bottom: 30px;
+}
+
+.bg_orange {
+    background-color: #f2912a;
+    color: #fff;
+}
+
+.bg_blaa {
+    background-color: #0084ff;
+    color: #fff;
+}
+
+.bg_gul {
+    background-color: #fff200;
+    color: #000;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 100px;
+    width: 100vw;
+    text-align: center;
+    padding: 20px 5%;
+    /*    margin: 40px 0px 0px 0px;*/
+}
+
+.holder {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+.txtholder {
+    flex-basis: 400px;
+    flex-grow: 1;
+    align-self: flex-start;
+
+    text-align: justify;
+    text-align: left;
+
+    padding: 0px 20px;
+
+}
+
+.kontakt_div {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+/*****     Header     *****/
+
+header {
+    position: fixed;
+    width: 100vw;
+}
+
+header nav {
+    padding: 0.5vw 3vw 0 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 100%);
+    text-align: right;
+}
+
+header nav a {
+    margin: 0.7vw 0.7vw;
+    font-size: 1.5vw;
+}
+
+
+/*****     Titel     *****/
+
+#titel {
+    min-height: 400px;
+    width: 100vw;
+    /*    background-color: black;*/
+    text-align: center;
+    padding: 20px 5%;
+}
+
+.titel h1 {
+    padding-top: 170px;
+    color: #000;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/*****     Spillet     *****/
+
+#spillet h2 {
+    padding-top: 30px;
+}
+
+/*****     Historien     *****/
+
+#historien h2 {
+    /*    padding-top: 30px;*/
+}
+
+/*****     Designproces     *****/
+
+#designproces h2 {
+    /*    padding-top: 30px;*/
+}
+
+
+
+
+/*****     Kontakt     *****/
+
+/* Billeder */
+
+.gruppeimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    min-height: 100px;
+    width: 100vw;
+    /*    background-color: black;*/
+    text-align: center;
+    padding: 20px 0%;
+}
+
+.jonas,
+.gry,
+.frederikfrank,
+.frederik,
+.mia {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 12vw;
+    height: 12vw;
+    border-radius: 1vw;
+}
+
+.jonas {
+    background-image: url(img/jonas.jpg);
+    background-size: 130%;
+}
+
+.gry {
+    background-image: url(img/gry.jpg);
+}
+
+.frederikfrank {
+    background-image: url(img/frederikfrank.jpg);
+}
+
+.frederik {
+    background-image: url(img/frederik.jpg);
+}
+
+.mia {
+    background-image: url(img/mia.jpg);
+}
+
+
+
+/* Navne */
+
+#kontakt {
+    padding: 5vw 0;
+    /*    background-color: grey;*/
+}
+
+.gruppenavne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 100vw;
+    padding: 20px 0%;
+    margin: 0;
+
+    text-align: center;
+    /*    background-color: black;*/
+    color: #fff;
+}
+
+.grpnavn {
+    width: 12vw;
+}
+
+.grpnavn h4 {
+    font-size: 2.4em;
+    font-weight: 700;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.grpnavn p {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: left;
+}
