@@ -1,0 +1,266 @@
+        /*Generelle indstillinger    */
+
+        img {
+            width: 100%;
+        }
+
+            {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #d3d2fc;
+            font-family: open sans;
+            margin: 0;
+        }
+
+        /* FJERNER ALT MARGIN OG PADDING */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            position: fixed;
+            /* ligger fast på skærmen*/
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+            /*W3C,*/
+            width: 100vw;
+            padding: 1em;
+        }
+
+        header nav {
+            font-family: "open sans";
+            text-align: right;
+            margin: 0 5vw 0 0;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #ece9fa;
+            padding-left: 4px;
+            display: block;
+        }
+
+        header nav a:hover {
+            color: darkred;
+        }
+
+        @media screen and (min-width:676px) {
+            header nav a {
+                display: inline-block;
+            }
+        }
+
+        h1 {
+            font-family: 'Allerta Stencil', sans-serif;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'arial', sans-serif;
+            color: #ae5f4f;
+        }
+
+        h3 {
+            font-family: 'arial', sans-serif;
+            color: #ae5f4f;
+        }
+
+        /* **** splash **** */
+
+        #splash {
+            width: 100vw;
+            height: 167.2vw;
+            background-image: url(img/splash/mobile_portrait.jpg);
+            background-size: cover;
+        }
+
+        #splash .ikon {
+            padding: 2vw;
+            width: 5vw;
+            box-sizing: content-box;
+        }
+
+        #splash .ikon img {
+            width: 100%;
+        }
+
+        #splash {
+            *max-width: 1024px;
+            margin: 0 auto
+        }
+
+        /* ** splash slut ** */
+
+        /************  media queries   ***********************/
+
+        @media screen and (min-width: 375px) and (max-width: 627px) and (orientation:landscape) {
+            #splash {
+                height: 59.8vw;
+                background-image: url(img/splash/mobile_landscape.jpg);
+            }
+        }
+
+        @media screen and (min-width: 376px) and (orientation:portrait) {
+            #splash {
+                height: 133.3vw;
+                background-image: url(/img/splash/tablet_portrait.jpg);
+            }
+        }
+
+        @media screen and (min-width: 628px) and (max-width: 1024px)and (orientation:landscape) {
+            #splash {
+                height: 75vw;
+                background-image: url(img/splash/tablet_landscape.jpg);
+            }
+        }
+
+        @media screen and (min-width: 1025px) and (orientation:landscape) {
+            #splash {
+                height: 56.3vw;
+                background-image: url(img/splash/desktop.jpg);
+            }
+        }
+
+        /**********************  @media screen retina *******************/
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1025px),
+        screen and (min-resolution: 192dpi) and (min-width: 1025px) {
+            #splash {
+                background-image: url(img/splash/desktop_retina.jpg);
+                height: 56vw;
+            }
+        }
+
+        #om,
+        #eksempler,
+        #typografi,
+        #komposition_farver,
+        #links,
+        #ekstra {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .sectionwrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 100px;
+            margin: 0 10px 0 10px;
+            border: 10px solid #f7dba5;
+            background-color: #ebe9fa;
+        }
+
+        .column_content {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            background-color: #ebe9fa;
+        }
+
+        .column_narrow {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 200px;
+            border: 10px solid #f7dba5;
+            background-color: #ebe9fa;
+        }
+
+        .column_wide {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 100px;
+            border: 10px solid #f7dba5;
+            background-color: #ebe9fa;
+        }
+
+        .colors {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 100px;
+            border: 10px solid #f7dba5;
+            background-color: #ebe9fa;
+        }
+
+        .content {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 300px;
+            border: 10px solid #f7dba5;
+            background-color: #ebe9fa;
+        }
+
+        /************ om **************/
+
+        #om .column {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 100px;
+            margin: 0 10px 0 10px;
+            border: 10px solid #f7dba5;
+            background-color: #ebe9fa;
+        }
+
+        /************ eksempler **************/
+
+        #eksempler h2 {
+            text-align: center;
+        }
+
+        #eksempler .bottom {
+            align-self: flex-end;
+            flex-grow: 1;
+        }
+
+        #eksempler .img {
+            width: 100%;
+        }
+
+        #eksempler .column_content {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /************ typografi **************/
+
+        /************ komposition_farver **************/
+
+        #komposition_farver .column_narrow {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 100px;
+            background-color: #ebe9fa;
+        }
+
+        #komposition_farver .column_wide {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 600px;
+            background-color: #ebe9fa;
+        }
+
+        #komposition_farver .colors {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 100px;
+            background-color: #ebe9fa;
+        }
+
+        #komposition_farver .content {
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-basis: 300px;
+            background-color: #ebe9fa;
+        }
+
+        /************ links **************/
+
+        /************ ekstra **************/
